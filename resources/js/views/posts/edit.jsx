@@ -31,7 +31,7 @@ export default function PostEdit() {
       <form onSubmit={submit}>
         <input className="form-control mb-2" value={title} onChange={(e) => setTitle(e.target.value)} />
         <textarea className="form-control mb-2" value={content} onChange={(e) => setContent(e.target.value)} />
-        <button className="btn btn-danger" onClick={() => navigate('/')}>Close</button>
+        <button className="btn btn-danger" onClick={() => navigate('/posts')}>Close</button>
         <button className="btn btn-primary">Update</button>
       </form>
     </div>

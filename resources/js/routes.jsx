@@ -7,7 +7,7 @@ import PostEdit from "./views/posts/edit.jsx";
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<PostIndex />} />
+      <Route path="/posts" element={<PostIndex />} />
       <Route path="/posts/create" element={<PostCreate />} />
       <Route path="/posts/edit/:id" element={<PostEdit />} />
     </Routes>

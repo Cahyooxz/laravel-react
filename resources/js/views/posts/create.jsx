@@ -26,7 +26,7 @@ export default function PostCreate() {
           placeholder="Content" required
           onChange={e => setContent(e.target.value)}
         ></textarea>
-        <button className="btn btn-success" onClick={() => navigate('/')}>close</button>
+        <button className="btn btn-success" onClick={() => navigate('/posts')}>close</button>
         <button className="btn btn-success">Save</button>
       </form>
     </div>

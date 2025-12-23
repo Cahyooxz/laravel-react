@@ -9,16 +9,26 @@
 //         }),
 //     ],
 // });
-import { defineConfig } from 'vite'
+import {
+    defineConfig
+} from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import laravel from 'laravel-vite-plugin'
 import react from '@vitejs/plugin-react'
 
+
 export default defineConfig({
-  plugins: [
-    laravel({
-      input: ['resources/js/main.jsx'],
-      refresh: true,
-    }),
-    react(),
-  ],
+    plugins: [
+        tailwindcss(),
+        laravel({
+            input: ['resources/js/main.jsx'],
+            refresh: true,
+        }),
+        react(),
+    ],
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, 'resources/js'),
+        },
+    },
 })
